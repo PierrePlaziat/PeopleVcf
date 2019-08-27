@@ -425,7 +425,6 @@ namespace PeopleVcf
                     Addresses[i].Country = match.Groups["strNation"].Value;
                 }
             }
-
             return ExtractContact();
         }
 
@@ -464,6 +463,7 @@ namespace PeopleVcf
                 contact.Addresses = Addresses.ToList();
             if (Emails != null && Emails.Any())
                 contact.Mails = Emails.ToList();
+            contact.GeneratePhoto();
             return contact;
         }
 

@@ -150,5 +150,10 @@ namespace PeopleVcf
 
         #endregion
 
+        internal void GeneratePhoto()
+        {
+            throw new NotImplementedException();
+        }
+
     }
 }

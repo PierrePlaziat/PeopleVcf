@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.WindowsAPICodePack.Dialogs;
+using System.Windows.Forms;
 
 namespace PathBox
 {
@@ -12,29 +12,9 @@ namespace PathBox
 
         public static string DialogOpenFolder(string InitialDirectory)
         {
-            var dlg = new CommonOpenFileDialog
-            {
-                Title = "My Title",
-                IsFolderPicker = true,
-                InitialDirectory = InitialDirectory,
-                AddToMostRecentlyUsedList = false,
-                AllowNonFileSystemItems = false,
-                DefaultDirectory = InitialDirectory,
-                EnsureFileExists = true,
-                EnsurePathExists = true,
-                EnsureReadOnly = false,
-                EnsureValidNames = true,
-                Multiselect = false,
-                ShowPlacesList = true
-            };
-
-            var folder = "";
-            if (dlg.ShowDialog() == CommonFileDialogResult.Ok)
-            {
-                folder = dlg.FileName;
-                // Do something with selected folder string
-            }
-            return folder;
+            var dialog = new FolderBrowserDialog();
+            dialog.ShowDialog();
+            return dialog.SelectedPath;
         }
 
         public static string DialogOpenFile(string InitialDirectory,string filter)

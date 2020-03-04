@@ -22,6 +22,27 @@
         "runtime": {
           "lib/net452/Microsoft.WindowsAPICodePack.Shell.dll": {}
         }
+      },
+      "WindowsAPICodePack-Core/1.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/Microsoft.WindowsAPICodePack.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.WindowsAPICodePack.dll": {}
+        }
+      },
+      "WindowsAPICodePack-Shell/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "WindowsAPICodePack-Core": "1.1.1"
+        },
+        "compile": {
+          "lib/Microsoft.WindowsAPICodePack.Shell.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.WindowsAPICodePack.Shell.dll": {}
+        }
       }
     },
     ".NETFramework,Version=v4.6.1/win": {
@@ -44,6 +65,27 @@
         },
         "runtime": {
           "lib/net452/Microsoft.WindowsAPICodePack.Shell.dll": {}
+        }
+      },
+      "WindowsAPICodePack-Core/1.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/Microsoft.WindowsAPICodePack.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.WindowsAPICodePack.dll": {}
+        }
+      },
+      "WindowsAPICodePack-Shell/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "WindowsAPICodePack-Core": "1.1.1"
+        },
+        "compile": {
+          "lib/Microsoft.WindowsAPICodePack.Shell.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.WindowsAPICodePack.Shell.dll": {}
         }
       }
     },
@@ -68,6 +110,27 @@
         "runtime": {
           "lib/net452/Microsoft.WindowsAPICodePack.Shell.dll": {}
         }
+      },
+      "WindowsAPICodePack-Core/1.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/Microsoft.WindowsAPICodePack.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.WindowsAPICodePack.dll": {}
+        }
+      },
+      "WindowsAPICodePack-Shell/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "WindowsAPICodePack-Core": "1.1.1"
+        },
+        "compile": {
+          "lib/Microsoft.WindowsAPICodePack.Shell.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.WindowsAPICodePack.Shell.dll": {}
+        }
       }
     },
     ".NETFramework,Version=v4.6.1/win-x86": {
@@ -90,6 +153,27 @@
         },
         "runtime": {
           "lib/net452/Microsoft.WindowsAPICodePack.Shell.dll": {}
+        }
+      },
+      "WindowsAPICodePack-Core/1.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/Microsoft.WindowsAPICodePack.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.WindowsAPICodePack.dll": {}
+        }
+      },
+      "WindowsAPICodePack-Shell/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "WindowsAPICodePack-Core": "1.1.1"
+        },
+        "compile": {
+          "lib/Microsoft.WindowsAPICodePack.Shell.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.WindowsAPICodePack.Shell.dll": {}
         }
       }
     }
@@ -120,28 +204,55 @@
         "microsoft-windowsapicodepack-shell.1.1.3.3.nupkg.sha512",
         "microsoft-windowsapicodepack-shell.nuspec"
       ]
+    },
+    "WindowsAPICodePack-Core/1.1.1": {
+      "sha512": "GoURoQuE7ea7B7q24YRTBfZbsNO7ZtwSyBHbM8zO0ynwfjAGC0bbAmVrDvZ6HbWtqqOt6QTzdmYnj2WJglb5JQ==",
+      "type": "package",
+      "path": "windowsapicodepack-core/1.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/Microsoft.WindowsAPICodePack.dll",
+        "lib/Microsoft.WindowsAPICodePack.xml",
+        "windowsapicodepack-core.1.1.1.nupkg.sha512",
+        "windowsapicodepack-core.nuspec"
+      ]
+    },
+    "WindowsAPICodePack-Shell/1.1.1": {
+      "sha512": "CPFamhL3jPo8O6+ErGsLS4LK3DWP5ncxqhbzpPnYkIW9rjatunUij35iTjprbr9mlYR/5Pbguw21MwSmTOKR4g==",
+      "type": "package",
+      "path": "windowsapicodepack-shell/1.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/Microsoft.WindowsAPICodePack.Shell.dll",
+        "lib/Microsoft.WindowsAPICodePack.Shell.xml",
+        "windowsapicodepack-shell.1.1.1.nupkg.sha512",
+        "windowsapicodepack-shell.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.6.1": [
-      "Microsoft-WindowsAPICodePack-Shell >= 1.1.3.3"
+      "Microsoft-WindowsAPICodePack-Shell >= 1.1.3.3",
+      "WindowsAPICodePack-Shell >= 1.1.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pplazi01\\.nuget\\packages\\": {}
+    "C:\\Users\\Plaziat\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GIT\\PeopleVcf\\PeopleVcf.csproj",
+      "projectUniqueName": "D:\\PROJECTS\\GIT\\PeopleVcf\\PeopleVcf.csproj",
       "projectName": "PeopleVcf",
-      "projectPath": "D:\\GIT\\PeopleVcf\\PeopleVcf.csproj",
-      "packagesPath": "C:\\Users\\pplazi01\\.nuget\\packages\\",
-      "outputPath": "D:\\GIT\\PeopleVcf\\obj\\",
+      "projectPath": "D:\\PROJECTS\\GIT\\PeopleVcf\\PeopleVcf.csproj",
+      "packagesPath": "C:\\Users\\Plaziat\\.nuget\\packages\\",
+      "outputPath": "D:\\PROJECTS\\GIT\\PeopleVcf\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\pplazi01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Plaziat\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -149,7 +260,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "http://gta-tfsapp01:8081/Dev/nuget/": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -164,6 +274,10 @@
           "Microsoft-WindowsAPICodePack-Shell": {
             "target": "Package",
             "version": "[1.1.3.3, )"
+          },
+          "WindowsAPICodePack-Shell": {
+            "target": "Package",
+            "version": "[1.1.1, )"
           }
         }
       }

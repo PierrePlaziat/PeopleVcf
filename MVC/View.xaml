@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PeopleVcf.MVC"
         mc:Ignorable="d"
-        Title="People" Height="500" Width="700">
+        Title="PeopleVcf (not all fields are yet working for both import and export)" Height="500" Width="700">
 
     <Grid Background="AliceBlue" Margin="0,0,0,0">
 
